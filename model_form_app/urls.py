@@ -37,7 +37,7 @@ urlpatterns = [
     path('emp_form',EmpPersonal_cls.as_view(),name='EmpPersonal_cls'),
     path('emp_cls_list',EmpPersonal_List.as_view(),name='emp_cls_list'),
     path('emp_cls_update/<pk>',EmpPersonal_Update.as_view(),name='emp_cls_update'),
-   #path('emp_cls_delete/<pk>',EmpPersonal_Delete.as_view(),name='emp_cls_delete')
+    #path('emp_cls_delete/<pk>',EmpPersonal_Delete.as_view(),name='emp_cls_delete')
     url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
     url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT})
     
